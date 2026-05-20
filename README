@@ -1,0 +1,14 @@
+# Programa de instalacion del software SAIUSF
+
+- Este software fue desarrollado en entorno IDE Netbeans con el proposito de aprobar el proyecto de investigacion para la obtencion del titulo Tecnico Superior en informatica.
+
+## Pasos para Instalar el software
+
+-Existen dos versiones del programa que se proporcionaran los enlaces correspondientes al final; la primera version es la Full 1.0, la cual contiene la instalacion del Java 25 utilizada para el desarrollo de software y la instalacion del Xampp 8 con MariaDB para el uso de la base de datos, en caso de instalar la version Lite 1.0 debe tener presente que las versiones usadas en la instalacion son:
+
+--OpenJDK25U-jdk_x64_windows_hotspot_25.0.3_9
+--xampp-windows-x64-8.2.12-0-VS16-installer
+
+toda la informacion correspondiente al desarrollo de este software se encuentra en el documento: "Proyecto de investigación (Versión final)"
+
+Git: 
