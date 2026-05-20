@@ -1,0 +1,167 @@
+2026-05-10T22:39:11.484Z [INFO] ----------------------invoke appmod-validate-cves-for-java----------------------
+2026-05-10T22:39:11.485Z [INFO] [Tool.invoke]({name: appmod-validate-cves-for-java, modelId: auto, input: {
+  "projectPath": "c:\\Users\\User\\Desktop\\SAIUSF",
+  "dependencies": []
+}}).
+2026-05-10T22:39:11.485Z [INFO] [Tool.invoke] do invoke.
+2026-05-10T22:39:11.487Z [INFO] Project c:\Users\User\Desktop\SAIUSF is a maven project, try to get java version from pom.xml
+2026-05-10T22:39:11.487Z [INFO] Getting CVEs for dependencies: 
+2026-05-10T22:39:11.488Z [INFO] getting CVEs for dependencies:
+ - ...
+2026-05-10T22:39:11.488Z [WARN] No valid Maven coordinates to scan for CVEs.
+2026-05-10T22:39:11.489Z [INFO] Found 0 dependencies with known CVEs
+2026-05-10T22:39:11.490Z [INFO] No known CVEs that need to be fixed are found for dependencies: 
+2026-05-10T22:39:11.491Z [INFO] [Tool.invoke]({result: {
+  "message": "No known CVEs that need to be fixed are found for the given dependencies."
+}}).
+2026-05-10T22:39:11.491Z [INFO] ----------------------invoked appmod-validate-cves-for-java----------------------
+2026-05-10T22:39:11.493Z [INFO] Project java version: 25
+2026-05-10T22:39:11.494Z [INFO] Maven project detected.
+2026-05-10T22:39:11.494Z [INFO] Build tool type: mvn
+2026-05-10T22:39:11.533Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.3.9-hotspot\\bin",
+  "version": "25"
+}
+2026-05-10T22:39:11.641Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Program Files\\Apache NetBeans\\java\\maven\\bin",
+  "version": "",
+  "source": "MAVEN_HOME,PATH"
+}
+2026-05-10T22:39:11.642Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Program Files\\Apache NetBeans\\java\\maven\\bin",
+    "name": "mvn",
+    "version": "",
+    "source": "MAVEN_HOME,PATH"
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.3.9-hotspot\\bin",
+    "name": "java",
+    "version": "25"
+  },
+  "name": "SAIUSF",
+  "dir": "c:\\Users\\User\\Desktop\\SAIUSF"
+}
+2026-05-10T22:39:11.643Z [INFO] [Environment] Running command (Java undefined): mvn dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 24 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 31 kB/s)
+[INFO] 
+[INFO] ------------------------< com.mycompany:SAIUSF >------------------------
+[INFO] Building SAIUSF 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-controls:jar:21.0.2 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ SAIUSF ---
+[INFO] com.mycompany:SAIUSF:jar:1.0-SNAPSHOT
+[INFO] +- org.mariadb.jdbc:mariadb-java-client:jar:3.3.3:compile
+[INFO] |  \- com.github.waffle:waffle-jna:jar:3.3.0:compile
+[INFO] |     +- net.java.dev.jna:jna:jar:5.13.0:compile
+[INFO] |     +- net.java.dev.jna:jna-platform:jar:5.13.0:compile
+[INFO] |     +- org.slf4j:jcl-over-slf4j:jar:2.0.7:compile
+[INFO] |     +- org.slf4j:slf4j-api:jar:2.0.7:compile
+[INFO] |     +- com.github.ben-manes.caffeine:caffeine:jar:2.9.3:compile
+[INFO] |     |  \- com.google.errorprone:error_prone_annotations:jar:2.10.0:compile
+[INFO] |     \- org.checkerframework:checker-qual:jar:3.32.0:compile
+[INFO] +- org.netbeans.external:AbsoluteLayout:jar:RELEASE280:compile
+[INFO] +- net.sf.jasperreports:jasperreports:jar:6.21.4:compile
+[INFO] |  +- commons-beanutils:commons-beanutils:jar:1.9.4:compile
+[INFO] |  |  \- commons-collections:commons-collections:jar:3.2.2:compile
+[INFO] |  +- commons-digester:commons-digester:jar:2.1:compile
+[INFO] |  +- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.2:compile
+[INFO] |  +- com.github.librepdf:openpdf:jar:1.3.32:compile
+[INFO] |  +- org.jfree:jcommon:jar:1.0.23:compile
+[INFO] |  +- org.jfree:jfreechart:jar:1.0.19:compile
+[INFO] |  +- org.eclipse.jdt:ecj:jar:3.21.0:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.17.1:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.17.1:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.17.1:compile
+[INFO] |  \- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.17.1:compile
+[INFO] |     +- org.codehaus.woodstox:stax2-api:jar:4.2.2:compile
+[INFO] |     \- com.fasterxml.woodstox:woodstox-core:jar:6.6.2:compile
+[INFO] +- com.formdev:flatlaf:jar:3.4.1:compile
+[INFO] +- org.openjfx:javafx-controls:jar:21.0.2:compile
+[INFO] |  +- org.openjfx:javafx-controls:jar:win:21.0.2:compile
+[INFO] |  \- org.openjfx:javafx-graphics:jar:21.0.2:compile
+[INFO] |     +- org.openjfx:javafx-graphics:jar:win:21.0.2:compile
+[INFO] |     \- org.openjfx:javafx-base:jar:21.0.2:compile
+[INFO] |        \- org.openjfx:javafx-base:jar:win:21.0.2:compile
+[INFO] \- org.openjfx:javafx-fxml:jar:21.0.2:compile
+[INFO]    \- org.openjfx:javafx-fxml:jar:win:21.0.2:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.315 s
+[INFO] Finished at: 2026-05-10T18:39:15-04:00
+[INFO] ------------------------------------------------------------------------
+2026-05-10T22:39:15.579Z [INFO] [MavenBuildTool] Successfully got dependency tree of c:\Users\User\Desktop\SAIUSF
+2026-05-10T22:39:15.580Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\User\Desktop\SAIUSF from pom.xml
+2026-05-10T22:39:15.580Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\User\Desktop\SAIUSF
+2026-05-10T22:39:15.580Z [INFO] [MavenBuildTool] Getting all module coordinates of c:\Users\User\Desktop\SAIUSF
+2026-05-10T22:39:15.580Z [INFO] [MavenBuildTool] Getting effective POMs of c:\Users\User\Desktop\SAIUSF
+2026-05-10T22:39:15.581Z [INFO] [Environment] Running command (Java undefined): mvn help:effective-pom -Doutput=effective-pom-3567c8ad-f123-4c7d-bfb4-90ea6c1ee86b.log
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/maven-metadata.xml
+Progress (1): 807 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/maven-metadata.xml (807 B at 2.0 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.5.1/maven-help-plugin-3.5.1.pom
+Progress (1): 780 BProgress (1): 1.7 kBProgress (1): 3.7 kBProgress (1): 8.4 kBProgress (1): 10 kB Progress (1): 10 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.5.1/maven-help-plugin-3.5.1.pom (10 kB at 149 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.5.1/maven-help-plugin-3.5.1.jar
+Progress (1): 0.9/65 kBProgress (1): 2.3/65 kBProgress (1): 3.6/65 kBProgress (1): 5.0/65 kBProgress (1): 6.4/65 kBProgress (1): 7.7/65 kBProgress (1): 8.2/65 kBProgress (1): 9.6/65 kBProgress (1): 11/65 kB Progress (1): 12/65 kBProgress (1): 14/65 kBProgress (1): 15/65 kBProgress (1): 16/65 kBProgress (1): 18/65 kBProgress (1): 19/65 kBProgress (1): 21/65 kBProgress (1): 22/65 kBProgress (1): 23/65 kBProgress (1): 25/65 kBProgress (1): 26/65 kBProgress (1): 27/65 kBProgress (1): 29/65 kBProgress (1): 30/65 kBProgress (1): 31/65 kBProgress (1): 33/65 kBProgress (1): 34/65 kBProgress (1): 36/65 kBProgress (1): 37/65 kBProgress (1): 38/65 kBProgress (1): 40/65 kBProgress (1): 41/65 kBProgress (1): 42/65 kBProgress (1): 44/65 kBProgress (1): 45/65 kBProgress (1): 47/65 kBProgress (1): 51/65 kBProgress (1): 55/65 kBProgress (1): 59/65 kBProgress (1): 63/65 kBProgress (1): 65 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.5.1/maven-help-plugin-3.5.1.jar (65 kB at 799 kB/s)
+[INFO] 
+[INFO] ------------------------< com.mycompany:SAIUSF >------------------------
+[INFO] Building SAIUSF 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.5.1:effective-pom (default-cli) @ SAIUSF ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools-generators/3.13.1/maven-plugin-tools-generators-3.13.1.pom
+Progress (1): 841 BProgress (1): 3.6 kBProgress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools-generators/3.13.1/maven-plugin-tools-generators-3.13.1.pom (4.1 kB at 48 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.13.1/maven-plugin-tools-3.13.1.pom
+Progress (1): 803 BProgress (1): 2.3 kBProgress (1): 4.1 kBProgress (1): 9.1 kBProgress (1): 13 kB Progress (1): 17 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.13.1/maven-plugin-tools-3.13.1.pom (18 kB at 258 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.pom
+Progress (1): 791 BProgress (1): 2.2 kBProgress (1): 4.3 kBProgress (1): 7.4 kBProgress (1): 9.5 kBProgress (1): 12 kB Progress (1): 15 kBProgress (1): 16 kBProgress (1): 16 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.pom (16 kB at 199 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.3/plexus-interactivity-api-1.3.pom
+Progress (1): 1.6 kBProgress (1): 1.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.3/plexus-interactivity-api-1.3.pom (1.7 kB at 23 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity/1.3/plexus-interactivity-1.3.pom
+Progress (1): 1.3 kBProgress (1): 1.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity/1.3/plexus-interactivity-1.3.pom (1.9 kB at 25 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom
+Progress (1): 956 BProgress (1): 2.2 kBProgress (1): 3.2 kBProgress (1): 4.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom (4.6 kB at 66 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.pom
+Progress (1): 880 BProgress (1): 4.2 kBProgress (1): 7.1 kBProgress (1): 10 kB Progress (1): 14 kBProgress (1): 22 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.pom (25 kB at 331 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.20/xstream-parent-1.4.20.pom
+Progress (1): 797 BProgress (1): 3.2 kBProgress (1): 5.9 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 19 kBProgress (1): 25 kBProgress (1): 26 kBProgress (1): 30 kBProgress (1): 35 kBProgress (1): 39 kBProgress (1): 42 kBProgress (1): 44 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.20/xstream-parent-1.4.20.pom (44 kB at 574 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.pom
+Progress (1): 817 BProgress (1): 2.9 kBProgress (1): 6.3 kBProgress (1): 10 kB Progress (1): 15 kBProgress (1): 19 kBProgress (1): 23 kBProgress (1): 24 kBProgress (1): 24 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.pom (24 kB at 302 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom
+Progress (1): 386 B                   Downloaded from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom (386 B at 5.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools-generators/3.13.1/maven-plugin-tools-generators-3.13.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/4.0.0/maven-reporting-api-4.0.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.3/plexus-interactivity-api-1.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar
+Progress (1): 3.8/446 kBProgress (1): 8.0/446 kBProgress (1): 12/446 kB Progress (1): 16/446 kBProgress (1): 21/446 kBProgress (1): 25/446 kBProgress (1): 29/446 kBProgress (1): 33/446 kBProgress (1): 37/446 kBProgress (1): 41/446 kBProgress (1): 45/446 kBProgress (1): 50/446 kBProgress (1): 66/446 kBProgress (1): 74/446 kBProgress (1): 82/446 kBProgress (1): 98/446 kBProgress (1): 106/446 kBProgress (1): 123/446 kBProgress (1): 139/446 kBProgress (1): 156/446 kBProgress (1): 172/446 kBProgress (1): 188/446 kBProgress (1): 205/446 kBProgress (1): 221/446 kBProgress (1): 238/446 kBProgress (1): 254/446 kBProgress (1): 270/446 kBProgress (2): 270/446 kB | 0.9/9.8 kBProgress (2): 270/446 kB | 2.3/9.8 kBProgress (3): 270/446 kB | 2.3/9.8 kB | 0.9/44 kBProgress (3): 270/446 kB | 3.6/9.8 kB | 0.9/44 kBProgress (3): 270/446 kB | 3.6/9.8 kB | 2.3/44 kBProgress (3): 270/446 kB | 3.6/9.8 kB | 3.6/44 kBProgress (3): 270/446 kB | 5.0/9.8 kB | 3.6/44 kBProgress (3): 270/446 kB | 6.4/9.8 kB | 3.6/44 kBProgress (3): 270/446 kB | 6.4/9.8 kB | 5.0/44 kBProgress (3): 270/446 kB | 7.7/9.8 kB | 5.0/44 kBProgress (3): 270/446 kB | 7.7/9.8 kB | 6.4/44 kBProgress (3): 270/446 kB | 8.2/9.8 kB | 6.4/44 kBProgress (3): 270/446 kB | 8.2/9.8 kB | 7.7/44 kBProgress (3): 270/446 kB | 9.6/9.8 kB | 7.7/44 kBProgress (3): 270/446 kB | 9.6/9.8 kB | 8.2/44 kBProgress (3): 270/446 kB | 9.8 kB | 8.2/44 kB    Progress (3): 270/446 kB | 9.8 kB | 9.6/44 kBProgress (3): 270/446 kB | 9.8 kB | 11/44 kB Progress (3): 270/446 kB | 9.8 kB | 12/44 kBProgress (3): 270/446 kB | 9.8 kB | 14/44 kBProgress (3): 270/446 kB | 9.8 kB | 15/44 kBProgress (3): 270/446 kB | 9.8 kB | 16/44 kBProgress (3): 270/446 kB | 9.8 kB | 18/44 kBProgress (3): 270/446 kB | 9.8 kB | 19/44 kBProgress (3): 270/446 kB | 9.8 kB | 21/44 kBProgress (3): 270/446 kB | 9.8 kB | 22/44 kBProgress (3): 270/446 kB | 9.8 kB | 23/44 kBProgress (3): 270/446 kB | 9.8 kB | 25/44 kBProgress (3): 287/446 kB | 9.8 kB | 25/44 kBProgress (3): 287/446 kB | 9.8 kB | 26/44 kBProgress (3): 287/446 kB | 9.8 kB | 27/44 kBProgress (3): 287/446 kB | 9.8 kB | 29/44 kBProgress (3): 287/446 kB | 9.8 kB | 30/44 kBProgress (3): 287/446 kB | 9.8 kB | 31/44 kBProgress (3): 287/446 kB | 9.8 kB | 33/44 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/4.0.0/maven-reporting-api-4.0.0.jar (9.8 kB at 60 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar
+Progress (2): 287/446 kB | 34/44 kBProgress (2): 287/446 kB | 36/44 kBProgress (2): 303/446 kB | 36/44 kBProgress (2): 303/446 kB | 37/44 kBProgress (2): 303/446 kB | 38/44 kBProgress (2): 303/446 kB | 40/44 kBProgress (2): 303/446 kB | 41/44 kBProgress (2): 303/446 kB | 42/44 kBProgress (2): 303/446 kB | 44 kB   Progress (2): 319/446 kB | 44 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools-generators/3.13.1/maven-plugin-tools-generators-3.13.1.jar (44 kB at 253 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar
+Progress (1): 336/446 kBProgress (2): 336/446 kB | 1.4/328 kBProgress (2): 352/446 kB | 1.4/328 kBProgress (2): 352/446 kB | 2.7/328 kBProgress (2): 352/446 kB | 4.1/328 kBProgress (2): 352/446 kB | 5.5/328 kBProgress (2): 352/446 kB | 6.8/328 kBProgress (2): 352/446 kB | 8.2/328 kBProgress (2): 352/446 kB | 9.6/328 kBProgress (2): 352/446 kB | 11/328 kB Progress (2): 352/446 kB | 12/328 kBProgress (2): 352/446 kB | 14/328 kBProgress (2): 352/446 kB | 15/328 kBProgress (2): 352/446 kB | 16/328 kBProgress (2): 352/446 kB | 18/328 kBProgress (2): 352/446 kB | 19/328 kBProgress (2): 352/446 kB | 21/328 kBProgress (2): 352/446 kB | 22/328 kBProgress (2): 352/446 kB | 23/328 kBProgress (3): 352/446 kB | 23/328 kB | 0.9/10 kBProgress (3): 352/446 kB | 23/328 kB | 2.3/10 kBProgress (3): 352/446 kB | 23/328 kB | 3.2/10 kBProgress (3): 352/446 kB | 23/328 kB | 4.6/10 kBProgress (3): 352/446 kB | 23/328 kB | 5.9/10 kBProgress (3): 352/446 kB | 23/328 kB | 7.3/10 kBProgress (3): 352/446 kB | 23/328 kB | 8.7/10 kBProgress (3): 352/446 kB | 23/328 kB | 10/10 kB Progress (3): 352/446 kB | 23/328 kB | 10 kB   Progress (3): 352/446 kB | 25/328 kB | 10 kBProgress (3): 352/446 kB | 26/328 kB | 10 kBProgress (3): 352/446 kB | 27/328 kB | 10 kBProgress (3): 352/446 kB | 29/328 kB | 10 kBProgress (3): 369/446 kB | 29/328 kB | 10 kBProgress (3): 369/446 kB | 30/328 kB | 10 kBProgress (3): 369/446 kB | 31/328 kB | 10 kBProgress (3): 369/446 kB | 33/328 kB | 10 kBProgress (3): 369/446 kB | 34/328 kB | 10 kBProgress (3): 369/446 kB | 36/328 kB | 10 kBProgress (3): 369/446 kB | 37/328 kB | 10 kBProgress (3): 369/446 kB | 38/328 kB | 10 kBProgress (3): 385/446 kB | 38/328 kB | 10 kBProgress (3): 385/446 kB | 40/328 kB | 10 kBProgress (3): 385/446 kB | 41/328 kB | 10 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.3/plexus-interactivity-api-1.3.jar (10 kB at 55 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+Progress (2): 385/446 kB | 42/328 kBProgress (2): 385/446 kB | 44/328 kBProgress (2): 385/446 kB | 45/328 kBProgress (2): 385/446 kB | 47/328 kBProgress (2): 385/446 kB | 48/328 kBProgress (2): 385/446 kB | 49/328 kBProgress (2): 385/446 kB | 51/328 kBProgress (2): 385/446 kB | 52/328 kBProgress (2): 385/446 kB | 53/328 kBProgress (2): 385/446 kB | 55/328 kBProgress (2): 385/446 kB | 59/328 kBProgress (2): 385/446 kB | 63/328 kBProgress (2): 385/446 kB | 67/328 kBProgress (2): 385/446 kB | 72/328 kBProgress (2): 401/446 kB | 72/328 kBProgress (2): 418/446 kB | 72/328 kBProgress (2): 434/446 kB | 72/328 kBProgress (2): 446 kB | 72/328 kB                                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.17.2/jsoup-1.17.2.jar (446 kB at 2.0 MB/s)
+Progress (1): 76/328 kBProgress (1): 80/328 kBProgress (2): 80/328 kB | 0.9/645 kBProgress (2): 80/328 kB | 2.3/645 kBProgress (2): 80/328 kB | 3.6/645 kBProgress (2): 80/328 kB | 5.0/645 kBProgress (2): 80/328 kB | 6.4/645 kBProgress (2): 80/328 kB | 7.7/645 kBProgress (2): 80/328 kB | 8.2/645 kBProgress (2): 80/328 kB | 9.6/645 kBProgress (2): 80/328 kB | 11/645 kB Progress (2): 80/328 kB | 12/645 kBProgress (2): 80/328 kB | 14/645 kBProgress (2): 80/328 kB | 15/645 kBProgress (2): 80/328 kB | 16/645 kBProgress (2): 80/328 kB | 18/645 kBProgress (2): 80/328 kB | 19/645 kBProgress (2): 80/328 kB | 21/645 kBProgress (2): 80/328 kB | 22/645 kBProgress (2): 84/328 kB | 22/645 kBProgress (2): 84/328 kB | 23/645 kBProgress (2): 84/328 kB | 25/645 kBProgress (2): 84/328 kB | 26/645 kBProgress (2): 89/328 kB | 26/645 kBProgress (2): 89/328 kB | 27/645 kBProgress (2): 89/328 kB | 29/645 kBProgress (2): 93/328 kB | 29/645 kBProgress (2): 93/328 kB | 30/645 kBProgress (2): 93/328 kB | 31/645 kBProgress (2): 93/328 kB | 33/645 kBProgress (2): 93/328 kB | 34/645 kBProgress (2): 93/328 kB | 36/645 kBProgress (2): 97/328 kB | 36/645 kBProgress (2): 97/328 kB | 37/645 kBProgress (2): 101/328 kB | 37/645 kBProgress (2): 101/328 kB | 38/645 kBProgress (2): 101/328 kB | 40/645 kBProgress (2): 106/328 kB | 40/645 kBProgress (2): 106/328 kB | 41/645 kBProgress (2): 106/328 kB | 42/645 kBProgress (2): 106/328 kB | 47/645 kBProgress (2): 106/328 kB | 51/645 kBProgress (3): 106/328 kB | 51/645 kB | 0.9/30 kBProgress (3): 106/328 kB | 55/645 kB | 0.9/30 kBProgress (3): 110/328 kB | 55/645 kB | 0.9/30 kBProgress (3): 110/328 kB | 55/645 kB | 2.3/30 kBProgress (3): 110/328 kB | 55/645 kB | 3.6/30 kBProgress (3): 110/328 kB | 55/645 kB | 5.0/30 kBProgress (3): 110/328 kB | 55/645 kB | 6.4/30 kBProgress (3): 114/328 kB | 55/645 kB | 6.4/30 kBProgress (3): 114/328 kB | 55/645 kB | 7.7/30 kBProgress (3): 114/328 kB | 55/645 kB | 9.1/30 kBProgress (3): 114/328 kB | 55/645 kB | 10/30 kB Progress (3): 114/328 kB | 59/645 kB | 10/30 kBProgress (3): 118/328 kB | 59/645 kB | 10/30 kBProgress (3): 118/328 kB | 59/645 kB | 11/30 kBProgress (3): 118/328 kB | 64/645 kB | 11/30 kBProgress (3): 122/328 kB | 64/645 kB | 11/30 kBProgress (3): 122/328 kB | 64/645 kB | 16/30 kBProgress (3): 122/328 kB | 66/645 kB | 16/30 kBProgress (3): 122/328 kB | 66/645 kB | 20/30 kBProgress (3): 122/328 kB | 70/645 kB | 20/30 kBProgress (3): 122/328 kB | 74/645 kB | 20/30 kBProgress (3): 127/328 kB | 74/645 kB | 20/30 kBProgress (3): 127/328 kB | 74/645 kB | 24/30 kBProgress (3): 127/328 kB | 74/645 kB | 28/30 kBProgress (3): 131/328 kB | 74/645 kB | 28/30 kBProgress (3): 131/328 kB | 78/645 kB | 28/30 kBProgress (3): 131/328 kB | 78/645 kB | 28/30 kBProgress (3): 131/328 kB | 78/645 kB | 30 kB   Progress (3): 135/328 kB | 78/645 kB | 30 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar (30 kB at 125 kB/s)
+Progress (2): 140/328 kB | 78/645 kBProgress (2): 144/328 kB | 78/645 kBProgress (2): 148/328 kB | 78/645 kBProgress (2): 152/328 kB | 78/645 kBProgress (2): 156/328 kB | 78/645 kBProgress (2): 161/328 kB | 78/645 kBProgress (2): 165/328 kB | 78/645 kBProgress (2): 169/328 kB | 78/645 kBProgress (2): 173/328 kB | 78/645 kBProgress (2): 178/328 kB | 78/645 kBProgress (2): 182/328 kB | 78/645 kBProgress (2): 186/328 kB | 78/645 kBProgress (2): 190/328 kB | 78/645 kBProgress (2): 195/328 kB | 78/645 kBProgress (2): 199/328 kB | 78/645 kBProgress (3): 199/328 kB | 78/645 kB | 0.9/7.2 kBProgress (3): 199/328 kB | 78/645 kB | 2.3/7.2 kBProgress (3): 199/328 kB | 78/645 kB | 3.2/7.2 kBProgress (3): 199/328 kB | 78/645 kB | 4.5/7.2 kBProgress (3): 199/328 kB | 78/645 kB | 5.9/7.2 kBProgress (3): 203/328 kB | 78/645 kB | 5.9/7.2 kBProgress (3): 203/328 kB | 78/645 kB | 7.2 kB                                                 Downloaded from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar (7.2 kB at 28 kB/s)
+Progress (2): 203/328 kB | 82/645 kBProgress (2): 203/328 kB | 87/645 kBProgress (2): 203/328 kB | 91/645 kBProgress (2): 203/328 kB | 95/645 kBProgress (2): 203/328 kB | 99/645 kBProgress (2): 203/328 kB | 104/645 kBProgress (2): 203/328 kB | 108/645 kBProgress (2): 203/328 kB | 112/645 kBProgress (2): 203/328 kB | 116/645 kBProgress (2): 203/328 kB | 121/645 kBProgress (2): 203/328 kB | 123/645 kBProgress (2): 203/328 kB | 127/645 kBProgress (2): 203/328 kB | 131/645 kBProgress (2): 207/328 kB | 131/645 kBProgress (2): 207/328 kB | 136/645 kBProgress (2): 211/328 kB | 136/645 kBProgress (2): 211/328 kB | 140/645 kBProgress (2): 216/328 kB | 140/645 kBProgress (2): 216/328 kB | 144/645 kBProgress (2): 220/328 kB | 144/645 kBProgress (2): 220/328 kB | 148/645 kBProgress (2): 220/328 kB | 152/645 kBProgress (2): 220/328 kB | 157/645 kBProgress (2): 220/328 kB | 161/645 kBProgress (2): 236/328 kB | 161/645 kBProgress (2): 236/328 kB | 165/645 kBProgress (2): 236/328 kB | 169/645 kBProgress (2): 236/328 kB | 174/645 kBProgress (2): 236/328 kB | 178/645 kBProgress (2): 236/328 kB | 182/645 kBProgress (2): 253/328 kB | 182/645 kBProgress (2): 253/328 kB | 186/645 kBProgress (2): 253/328 kB | 191/645 kBProgress (2): 253/328 kB | 195/645 kBProgress (2): 253/328 kB | 199/645 kBProgress (2): 262/328 kB | 199/645 kBProgress (2): 262/328 kB | 203/645 kBProgress (2): 262/328 kB | 207/645 kBProgress (2): 279/328 kB | 207/645 kBProgress (2): 295/328 kB | 207/645 kBProgress (2): 311/328 kB | 207/645 kBProgress (2): 328/328 kB | 207/645 kBProgress (2): 328 kB | 207/645 kB                                     Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.jar (328 kB at 1.1 MB/s)
+Progress (1): 224/645 kBProgress (1): 240/645 kBProgress (1): 254/645 kBProgress (1): 270/645 kBProgress (1): 287/645 kBProgress (1): 303/645 kBProgress (1): 319/645 kBProgress (1): 336/645 kBProgress (1): 352/645 kBProgress (1): 369/645 kBProgress (1): 385/645 kBProgress (1): 401/645 kBProgress (1): 418/645 kBProgress (1): 434/645 kBProgress (1): 451/645 kBProgress (1): 467/645 kBProgress (1): 483/645 kBProgress (1): 500/645 kBProgress (1): 516/645 kBProgress (1): 532/645 kBProgress (1): 549/645 kBProgress (1): 565/645 kBProgress (1): 582/645 kBProgress (1): 598/645 kBProgress (1): 614/645 kBProgress (1): 631/645 kBProgress (1): 645 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar (645 kB at 1.7 MB/s)
+[INFO] Effective-POM written to: c:\Users\User\Desktop\SAIUSF\effective-pom-3567c8ad-f123-4c7d-bfb4-90ea6c1ee86b.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.342 s
+[INFO] Finished at: 2026-05-10T18:39:19-04:00
+[INFO] ------------------------------------------------------------------------
+2026-05-10T22:39:19.113Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\User\Desktop\SAIUSF\pom.xml
+2026-05-10T22:39:19.114Z [INFO] [MavenBuildTool] Java version found in c:\Users\User\Desktop\SAIUSF\pom.xml: 25

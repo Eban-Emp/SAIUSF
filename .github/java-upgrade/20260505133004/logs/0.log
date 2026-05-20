@@ -1,0 +1,92 @@
+2026-05-05T13:30:04.327Z [INFO] ----------------------invoke appmod-validate-cves-for-java----------------------
+2026-05-05T13:30:04.328Z [INFO] [Tool.invoke]({name: appmod-validate-cves-for-java, modelId: auto, input: {
+  "dependencies": [
+    "mysql:mysql-connector-java:8.0.33",
+    "org.netbeans.external:AbsoluteLayout:RELEASE280",
+    "net.sf.jasperreports:jasperreports:6.20.0",
+    "com.formdev:flatlaf:3.4.1",
+    "org.openjfx:javafx-controls:17.0.2",
+    "org.openjfx:javafx-fxml:17.0.2"
+  ],
+  "projectPath": "c:\\Users\\User\\Desktop\\SAIUSF"
+}}).
+2026-05-05T13:30:04.328Z [INFO] [Tool.invoke] do invoke.
+2026-05-05T13:30:04.330Z [INFO] Project c:\Users\User\Desktop\SAIUSF is a maven project, try to get java version from pom.xml
+2026-05-05T13:30:04.330Z [INFO] Getting CVEs for dependencies: mysql:mysql-connector-java:8.0.33,org.netbeans.external:AbsoluteLayout:RELEASE280,net.sf.jasperreports:jasperreports:6.20.0,com.formdev:flatlaf:3.4.1,org.openjfx:javafx-controls:17.0.2,org.openjfx:javafx-fxml:17.0.2
+2026-05-05T13:30:04.331Z [INFO] getting CVEs for dependencies:
+ - mysql:mysql-connector-java:8.0.33
+  - org.netbeans.external:AbsoluteLayout:RELEASE280
+  - net.sf.jasperreports:jasperreports:6.20.0
+  - com.formdev:flatlaf:3.4.1
+  - org.openjfx:javafx-controls:17.0.2
+  - org.openjfx:javafx-fxml:17.0.2...
+2026-05-05T13:30:04.331Z [INFO] getting gitHub access token...
+2026-05-05T13:30:04.333Z [INFO] Project java version: 17
+2026-05-05T13:30:04.334Z [INFO] Maven project detected.
+2026-05-05T13:30:04.334Z [INFO] Build tool type: mvn
+2026-05-05T13:30:04.361Z [INFO] JDK: undefined
+2026-05-05T13:30:04.361Z [ERROR] Failed to detect or resolve JDK for the project at c:\Users\User\Desktop\SAIUSF.
+2026-05-05T13:30:04.362Z [WARN] Failed to create build tool at c:\Users\User\Desktop\SAIUSF, sending lightweight telemetry: Failed to detect or resolve JDK for the project at c:\Users\User\Desktop\SAIUSF. Please ensure JDK 17 is installed and properly configured on the machine.
+2026-05-05T13:30:04.362Z [INFO] Maven project detected.
+2026-05-05T13:30:04.363Z [INFO] Project c:\Users\User\Desktop\SAIUSF is a maven project, try to get java version from pom.xml
+2026-05-05T13:31:51.662Z [INFO] Processing batch 1/1, size: 6
+2026-05-05T13:31:51.663Z [INFO] Proxy configuration: HTTPS_PROXY=(not set), HTTP_PROXY=(not set), NO_PROXY=(not set), NODE_EXTRA_CA_CERTS=(not set), vscode http.proxy=(not set), hasProxy=false
+2026-05-05T13:31:51.663Z [INFO] No proxy detected, using direct connection.
+2026-05-05T13:31:51.665Z [INFO] listing CVEs from GitHub for dependencies [
+  "mysql:mysql-connector-java:8.0.33",
+  "org.netbeans.external:AbsoluteLayout:RELEASE280",
+  "net.sf.jasperreports:jasperreports:6.20.0",
+  "com.formdev:flatlaf:3.4.1",
+  "org.openjfx:javafx-controls:17.0.2",
+  "org.openjfx:javafx-fxml:17.0.2"
+]
+2026-05-05T13:31:51.665Z [INFO] GitHub Advisory API affects parameter: ["mysql:mysql-connector-java@8.0.33","org.netbeans.external:AbsoluteLayout@RELEASE280","net.sf.jasperreports:jasperreports@6.20.0","com.formdev:flatlaf@3.4.1","org.openjfx:javafx-controls@17.0.2","org.openjfx:javafx-fxml@17.0.2"]
+2026-05-05T13:31:52.144Z [INFO] Fetched 2 total advisories across all pages
+2026-05-05T13:31:52.145Z [INFO] Advisory IDs returned: CVE-2023-22102, CVE-2025-10492
+2026-05-05T13:31:52.145Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-05-05T13:31:52.146Z [INFO] done getting 2 CVEs for 6 dependencies
+2026-05-05T13:31:52.146Z [INFO] calculating patched version by dep...
+2026-05-05T13:31:52.147Z [WARN] CVE-2023-22102/mysql:mysql-connector-java:8.0.33: none/invalid patched version "null".
+2026-05-05T13:31:52.147Z [INFO] CVE CVE-2025-10492 for net.sf.jasperreports:jasperreports:6.20.0: patched version 7.0.4
+2026-05-05T13:31:52.147Z [INFO] finished getting CVEs for dependencies.
+2026-05-05T13:31:52.147Z [INFO] Found 2 dependencies with known CVEs
+2026-05-05T13:31:52.148Z [INFO] CVE issues found:
+- Dependency `net.sf.jasperreports:jasperreports:6.20.0` has **1** known CVEs need to be fixed:
+  - [CVE-2025-10492](https://github.com/advisories/GHSA-7c3f-cg9x-f3gr): JasperReports has a Java deserialisation vulnerability
+    - **Severity**: **HIGH**
+    - **Details**: A Java deserialisation vulnerability has been discovered in the Jaspersoft Library. Improper handling of externally supplied data may allow attackers to execute arbitrary code remotely on systems that use the affected library.
+2026-05-05T13:31:52.148Z [INFO] [Tool.invoke]({result: {
+  "message": "The following dependencies have known CVEs that need to be fixed:\n- Dependency `net.sf.jasperreports:jasperreports:6.20.0` has **1** known CVEs need to be fixed:\n  - [CVE-2025-10492](https://github.com/advisories/GHSA-7c3f-cg9x-f3gr): JasperReports has a Java deserialisation vulnerability\n    - **Severity**: **HIGH**\n    - **Details**: A Java deserialisation vulnerability has been discovered in the Jaspersoft Library. Improper handling of externally supplied data may allow attackers to execute arbitrary code remotely on systems that use the affected library.",
+  "result": [
+    {
+      "cves": [
+        {
+          "id": "CVE-2025-10492",
+          "ghsa_id": "GHSA-7c3f-cg9x-f3gr",
+          "severity": "high",
+          "summary": "JasperReports has a Java deserialisation vulnerability",
+          "description": "A Java deserialisation vulnerability has been discovered in the Jaspersoft Library. Improper handling of externally supplied data may allow attackers to execute arbitrary code remotely on systems that use the affected library.",
+          "html_url": "https://github.com/advisories/GHSA-7c3f-cg9x-f3gr",
+          "affectedDeps": [
+            {
+              "name": "net.sf.jasperreports:jasperreports",
+              "vulVersions": "< 7.0.4",
+              "patchedVersion": "7.0.4"
+            }
+          ]
+        }
+      ],
+      "dep": "net.sf.jasperreports:jasperreports:6.20.0",
+      "name": "net.sf.jasperreports:jasperreports",
+      "version": "6.20.0",
+      "semver": "6.20.0",
+      "unfixableCves": [],
+      "patchedVersion": "7.0.4"
+    }
+  ],
+  "telemetry": {
+    "cve.high": 1,
+    "cves": "{\"CVE-2025-10492\":1}"
+  }
+}}).
+2026-05-05T13:31:52.148Z [INFO] ----------------------invoked appmod-validate-cves-for-java----------------------
